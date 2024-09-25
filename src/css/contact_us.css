@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Apply globally */
+}
+
+.titleWrapper {
+    text-align: center;
+    padding: 100px 0 50px 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.topWrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 992px) {
+    .topWrapper {
+        flex-wrap: wrap;
+    }
+}
+
+.inputWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+}
+
+.inputWrapper input {
+    padding: 12px 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif; 
+    outline: 2px solid transparent;
+}
+
+.inputWrapper label {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.inputWrapper button {
+    padding: 12px;
+    width: 264px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    border-radius: 36px;
+    margin: 16px auto;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+.inputWrapper button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.mediaWrapper {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mediaList {
+    display: flex;
+    align-items: center;
+    margin: 30px 50px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.2rem;
+}
+
+.mediaList img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .titleWrapper {
+        font-size: 1.2rem;
+    }
+
+    .inputWrapper {
+        padding: 0 60px;
+    }
+
+    .inputWrapper label {
+        font-size: 1.1rem;
+    }
+
+    .inputWrapper input {
+        font-size: 1rem;
+    }
+
+    .inputWrapper button {
+        font-size: 1rem;
+        width: 184px;
+    }
+
+    .mediaList {
+        font-size: 1rem;
+        margin: 30px 40px;
+    }
+
+    .mediaList img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.bottomWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationTitle {
+    font-weight: 700;
+    padding: 100px 0 50px 0;
+    font-size: 1.5rem;
+}
+
+.locationWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.locationMap {
+    margin: 0 auto;
+}
+
+.locationTextbox p {
+    font-family: 'Montserrat', sans-serif; 
+    width: 60%;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .locationTitle {
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        width: 100%;
+    }   
+
+    .locationTextbox p {
+        font-size: 0.8rem;
+    }
+}
