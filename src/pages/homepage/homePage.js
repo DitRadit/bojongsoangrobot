@@ -7,7 +7,7 @@ import ProductSection from "./ViewProductButton";
 import ContactUs from "./ContactUs";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
-import HomeModelContainer from "../3DModel/HomeModelContainer";
+
 
 function HomePage() {
   return (
@@ -37,7 +37,6 @@ function HomePage() {
           </div>
         </div>
       </div>
-      
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { OrbitControls } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import { Interactive, useHitTest, useXR } from "@react-three/xr";
 import { useRef, useState, useEffect } from "react";
-import { HomeModel } from "./HomeModel";
+import { HomeModel } from "./Model";
 
 const HomeHitModel = () => {
   const reticleRef = useRef();

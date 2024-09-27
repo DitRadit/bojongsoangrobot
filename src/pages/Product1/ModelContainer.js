@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { ARButton, XR } from "@react-three/xr";
-import HomeHitModel from "./HomeHitModel";
+import HomeHitModel from "./HitModel";
 import React from "react";
 
 const HomeModelContainer = () => {
