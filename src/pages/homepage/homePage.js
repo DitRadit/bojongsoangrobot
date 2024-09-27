@@ -5,6 +5,7 @@ import AboutUs from "./AboutUs";
 import TryButton from "./TryButton";
 import ProductSection from "./ViewProductButton";
 import ContactUs from "./ContactUs";
+import Bimo from "../SessionProduct/BimoSession"
 
 function HomePage() {
   return (
@@ -27,6 +28,7 @@ function HomePage() {
       </div>
       <div>
       </div>
+      <Bimo />
     </div>
   );
 }
