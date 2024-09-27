@@ -7,9 +7,9 @@ function RobotDisplay() {
     { 
       name: "BMO",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      imageUrl: "https://www.veve.me/collectibles/_next/image?url=https%3A%2F%2Fd11unjture0ske.cloudfront.net%2Ftransparent_background_image.ea0d07e7-6beb-4178-af18-8673c66d074f.fda2dbd4-d3af-4613-a06a-41ac3efa122f.png&w=1060&q=75",
+      imageUrl: "models/bmoimage1.png",
       url: "/product1",
-      backgroundColor: "bg-green-400"
+      backgroundColor: "bg-[#63BDA4]"
     },
     {
       name: "Baymax",
@@ -29,9 +29,8 @@ function RobotDisplay() {
 
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [animate, setAnimate] = useState(true); // Animation state
+  const [animate, setAnimate] = useState(true); 
 
-  // Handle image preloading
   useEffect(() => {
     const images = robots.map(robot => new Image().src = robot.imageUrl);
     let loadedCount = 0;
@@ -40,7 +39,7 @@ function RobotDisplay() {
       loadedCount++;
       if (loadedCount === images.length) {
         setLoading(false);
-        setAnimate(true); // Set animation to true after images load
+        setAnimate(true); 
       }
     };
 
@@ -53,11 +52,11 @@ function RobotDisplay() {
   }, [robots]);
 
   const handleSlideChange = (swiper) => {
-    setAnimate(false); // Reset animation state
+    setAnimate(false); 
     setTimeout(() => {
       setActiveSlideIndex(swiper.activeIndex);
-      setAnimate(true); // Start animation after slide change
-    }, 300); // Small delay for smooth transition
+      setAnimate(true); 
+    }, 300); 
   };
 
   if (loading) {

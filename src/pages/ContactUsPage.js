@@ -1,6 +1,10 @@
 import React from "react";
 import "../css/contact_us.css";
 import Navbar from "./homepage/Navbar";
+import email from "../images/Email.png"
+import instagram from "../images/Instagram.png"
+import phone from "../images/Phone.png"
+import Footer from "./homepage/Footer";
 
 const ContactUs = () => {
   return (
@@ -24,15 +28,15 @@ const ContactUs = () => {
         </div>
         <div className="mediaWrapper">
           <div className="mediaList">
-            <img src="Images/email.png" alt="email" />
+            <img src={email} alt="email" />
             <p>bojongrobot@gmail.com</p>
           </div>
           <div className="mediaList">
-            <img src="Images/Instagram.png" alt="Instagram" />
+            <img src={instagram}  alt="Instagram" />
             <p>@bojongrobot</p>
           </div>
           <div className="mediaList">
-            <img src="Images/Phone.png" alt="phone" />
+            <img src={phone}  alt="phone" />
             <p>+62 XXX-XXXX-XXXX</p>
           </div>
         </div>
@@ -63,6 +67,7 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    <Footer />
     </>
   );
 };

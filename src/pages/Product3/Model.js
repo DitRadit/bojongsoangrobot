@@ -4,17 +4,13 @@ import { useGLTF } from "@react-three/drei";
 export function HomeModel(props) {
   const { nodes, materials } = useGLTF("models/vector_robot.glb");
 
-  // Create a reference to the 3D model group
   const group = useRef();
-  
-  // State to track dragging
+
   const [isDragging, setIsDragging] = useState(false);
   const [previousMousePosition, setPreviousMousePosition] = useState({ x: 0 });
 
-  // Use the useEffect hook to update the rotation
   useEffect(() => {
     const animate = () => {
-      // Automatic rotation animation if not dragging
       if (group.current && !isDragging) {
         group.current.rotation.y += 0.005;
       }
@@ -25,29 +21,23 @@ export function HomeModel(props) {
     
     return () => cancelAnimationFrame(animate);
   }, [isDragging]);
-
-  // Handle pointer down (touch/mouse down)
   const handlePointerDown = (e) => {
     setIsDragging(true);
     setPreviousMousePosition({ x: e.clientX || e.touches[0].clientX });
   };
-
-  // Handle pointer move (touch/mouse drag)
   const handlePointerMove = (e) => {
     if (!isDragging) return;
 
     const clientX = e.clientX || e.touches[0].clientX;
     const deltaX = clientX - previousMousePosition.x;
 
-    // Update the model's rotation based on deltaX
     if (group.current) {
-      group.current.rotation.y += deltaX * 0.01; // Adjust rotation sensitivity
+      group.current.rotation.y += deltaX * 0.01; 
     }
 
     setPreviousMousePosition({ x: clientX });
   };
 
-  // Handle pointer up (touch/mouse release)
   const handlePointerUp = () => {
     setIsDragging(false);
   };

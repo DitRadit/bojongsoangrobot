@@ -17,8 +17,8 @@ function ImageCarousel({ robots, onSlideChange }) {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       }}
-      modules={[Pagination, Navigation, Mousewheel]} // Add Mousewheel here
-      mousewheel={true} // Enable mousewheel control
+      modules={[Pagination, Navigation, Mousewheel]} 
+      mousewheel={true} 
       className="w-full"
       onSlideChange={onSlideChange}
     >
@@ -35,7 +35,6 @@ function ImageCarousel({ robots, onSlideChange }) {
         </SwiperSlide>
       ))}
       
-      {/* Pagination styles */}
       <style jsx>{`
         .swiper-pagination {
           bottom: 10px; /* Adjust as needed */

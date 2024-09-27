@@ -4,7 +4,6 @@ function AboutUs() {
   return (
     <div className="flex flex-col text-white rounded-none w-full my-1.5">
       <div className="flex flex-col px-3 py-4 mt-1 bg-black border-2 border-gray-700 rounded-3xl w-full transition-transform duration-300 hover:bg-white hover:text-black hover:scale-105">
-      {/* Added hover effects */}
         <div className="self-start text-4xl font-bold">ABOUT US</div>
         <div className="flex gap-10 items-start mt-20 text-sm">
           <div className="grow shrink self-start">

@@ -7,11 +7,12 @@ import ProductSection from "./ViewProductButton";
 import ContactUs from "./ContactUs";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 
 function HomePage() {
   return (
-    <div className="px-4 pt-0.5 pb-32 w-full bg-white max-md:pb-24 max-md:max-w-full">
+    <div className="px-4 pt-0.5 w-full bg-white max-md:pb-24 max-md:max-w-full">
        <Navbar />
       <div className="flex gap-5 max-md:flex-col">
         
@@ -37,6 +38,7 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

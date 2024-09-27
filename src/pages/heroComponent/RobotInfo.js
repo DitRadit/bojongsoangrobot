@@ -6,7 +6,7 @@ function RobotInfo({ name, description }) {
       <h2 className="text-2xl md:text-3xl font-extrabold">
         {name}
       </h2>
-      <p className="mt-10 md:mt-20 text-base md:text-lg">
+      <p className="mt-5 md:mt-10 text-base md:text-lg">
         {description}
       </p>
     </article>

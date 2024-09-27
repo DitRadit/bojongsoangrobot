@@ -18,7 +18,7 @@ const HomeModelContainer = () => {
   
       <Canvas
         camera={{ position: [0, 0, 5] }}
-        gl={{ alpha: true }} // Ensure transparency for AR
+        gl={{ alpha: true }} 
       >
         <XR>
           <ambientLight intensity={0.5} />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "./Logo"; // Make sure to adjust the import based on your file structure.
+import Logo from "./Logo";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +11,6 @@ function Navbar() {
   return (
     <nav className="flex items-center justify-between p-4 ">
       <Logo />
-
-      {/* Hamburger Menu Icon */}
       <div className="md:hidden" onClick={toggleMenu}>
         <button className="focus:outline-none">
           <svg
@@ -27,8 +25,6 @@ function Navbar() {
           </svg>
         </button>
       </div>
-
-      {/* Navbar Links */}
       <div className={`flex-col md:flex md:flex-row ${isOpen ? "flex" : "hidden"} md:items-center md:space-x-8`}>
         <a href="/" className="py-2 text-black-700 font-bold hover:text-gray-500">Home</a>
         <a href="/aboutus" className="py-2 text-black-700 font-bold hover:text-gray-500">About</a>

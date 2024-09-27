@@ -4,7 +4,6 @@ function ContactUs() {
     return (
         <div className="flex flex-col text-white rounded-none w-full my-1.5">
             <div className="relative flex flex-col px-4 py-2 mt-1 bg-black border-2 border-gray-700 rounded-3xl w-full transition-transform duration-300 hover:bg-white hover:text-black hover:scale-105">
-                {/* Added hover effects */}
                 <div className="self-start text-4xl font-bold">CONTACT US</div>
                 <div className="flex flex-col md:flex-row gap-4 items-start mt-4 text-lg">
                 <img

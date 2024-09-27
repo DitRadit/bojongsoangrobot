@@ -7,8 +7,8 @@ import { HomeModel } from "./Model";
 const HomeHitModel = () => {
   const reticleRef = useRef();
   const [models, setModels] = useState([]);
-  const [placingModel, setPlacingModel] = useState(false); // New state for visual feedback
-  const { isPresenting } = useXR(); // Move useXR inside the XR context
+  const [placingModel, setPlacingModel] = useState(false); 
+  const { isPresenting } = useXR(); 
 
   const { camera } = useThree();
   
@@ -34,8 +34,6 @@ const HomeHitModel = () => {
       let id = Date.now();
       setModels([{ position, id }]);
       setPlacingModel(true);
-
-      // Optionally, set a timeout to reset placingModel after a certain duration
       setTimeout(() => {
         setPlacingModel(false);
       }, 1000);
@@ -45,11 +43,11 @@ const HomeHitModel = () => {
   return (
     <>
       <OrbitControls
-        enableZoom={true} // Enable zooming
-        minPolarAngle={Math.PI / 4} // Set the minimum polar angle (elevation) of the camera
-        maxPolarAngle={3 * Math.PI / 4} // Set the maximum polar angle (elevation) of the camera
-        minDistance={1} // Set the minimum distance of the camera from the target
-        maxDistance={10} // Set the maximum distance of the camera from the target
+        enableZoom={true} 
+        minPolarAngle={Math.PI / 4} 
+        maxPolarAngle={3 * Math.PI / 4} 
+        minDistance={1} 
+        maxDistance={10}
       />
       <ambientLight />
       {isPresenting &&

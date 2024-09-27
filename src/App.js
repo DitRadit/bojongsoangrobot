@@ -7,6 +7,7 @@ import Product1 from './pages/product/product1';
 import Product2 from './pages/product/product2';
 import Product3 from './pages/product/product3';
 import ProductPage from './pages/ProductGallery.js/ProductPage';
+import SourcePage from './pages/SourcePage';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Route path="/product2" element={<Product2 />} />
       <Route path="/product3" element={<Product3 />} />
       <Route path="/product" element={<ProductPage />} />
+      <Route path="/source" element={<SourcePage />} />
     </Routes>
   );
 };
